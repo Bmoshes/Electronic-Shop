@@ -1,0 +1,111 @@
+.navbar {
+  background: rgba(44, 62, 80, 0.95);
+  /* אפור מתכתי כהה עם שקיפות */
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(149, 165, 166, 0.3);
+  /* גבול אפור מתכתי */
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ECF0F1;
+  /* לבן-אפור לכותרת */
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #52C4E5;
+  /* כחול מתכתי בהיר על hover */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #BDC3C7;
+  /* אפור בהיר לטקסט */
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  margin-top: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #52C4E5;
+  /* כחול מתכתי בהיר על hover */
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-button {
+  color: #BDC3C7;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-button:hover {
+  color: #52C4E5;
+}
+
+.cart-count {
+  background: linear-gradient(135deg, #5D6D7E, #85929E);
+  /* גרדיאנט אפור מתכתי */
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 8px 8px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,49 @@
+/* עיצוב כללי לתחתית הדף */
+.footer {
+  background: #34495E;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  direction: rtl;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* תוכן הפוטר */
+.footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-content > div {
+  margin-bottom: 0.5rem;
+  min-width: 180px;
+}
+
+/* קישורים */
+.footer a {
+  color: #52C4E5;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+/* רספונסיביות למסכים קטנים */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .footer {
+    font-size: 0.95rem;
+    padding: 1.2rem 0 0.7rem 0;
+  }
+}

@@ -1,0 +1,66 @@
+:root {
+  --background-white: #F8F9FA;
+  --background-light: #ECF0F1;
+  --primary-color: #5D6D7E;
+  --primary-hover: #34495E;
+  --text-color: #2C3E50;
+  --gray-light: #7F8C8D;
+  --border-color: #BDC3C7;
+  --accent-color: #52C4E5;
+}
+
+body {
+  background-color: var(--text-color);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--border-color);
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(44, 62, 80, 0.2);
+}
+
+.store-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+}
+
+.store-slogan {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.store-about {
+  font-size: 1rem;
+  color: var(--gray-light);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  direction: rtl;
+}

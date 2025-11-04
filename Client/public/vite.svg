@@ -1,0 +1,3 @@
+   npm create vite@latest my-react-store --template react
+   cd my-react-store
+   npm install
